@@ -20,7 +20,7 @@
                                                    inManagedObjectStore:[[YFSDataModel sharedDataModel] objectStore]];
     [mapping addAttributeMappingsFromDictionary:@{
      @"_id":             @"gameID",
-     @"name":             @"name",
+     @"name":            @"name",
      @"date":            @"date"}];
     mapping.identificationAttributes = @[ @"gameID" ];
     
@@ -37,9 +37,9 @@
                                                    inManagedObjectStore:[[YFSDataModel sharedDataModel] objectStore]];
     [mapping addAttributeMappingsFromDictionary:@{
      @"_id":             @"inningID",
-     @"inning":             @"inningNumber",
-     @"score":             @"score",
-     @"isTop":            @"isTop"}];
+     @"inning":          @"inningNumber",
+     @"score":           @"score",
+     @"isTop":           @"isTop"}];
     
     return mapping;
 }
@@ -72,8 +72,9 @@
                                                    inManagedObjectStore:[[YFSDataModel sharedDataModel] objectStore]];
     [mapping addAttributeMappingsFromDictionary:@{
      @"bombs":            @"bombTotal",
-     @"name":             @"name"}];
-    mapping.identificationAttributes = @[ @"name" ];
+     @"name":             @"name",
+     @"_id":              @"bombID"}];
+    mapping.identificationAttributes = @[ @"bombID" ];
 
     return mapping;
 }

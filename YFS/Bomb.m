@@ -13,5 +13,6 @@
 
 @dynamic bombTotal;
 @dynamic name;
+@dynamic bombID;
 
 @end

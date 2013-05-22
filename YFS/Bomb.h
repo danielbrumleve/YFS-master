@@ -14,5 +14,6 @@
 
 @property (nonatomic, copy) NSNumber * bombTotal;
 @property (nonatomic, copy) NSString * name;
+@property (nonatomic, copy) NSString *bombID;
 
 @end

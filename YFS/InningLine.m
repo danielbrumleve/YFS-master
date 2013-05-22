@@ -30,11 +30,11 @@
     topPath.lineWidth = 2;
     [topPath stroke];
     
-    UIBezierPath *middlePath = [[UIBezierPath alloc]init];
-    [middlePath moveToPoint:CGPointMake(0, 50)];
-    [middlePath addLineToPoint:CGPointMake(self.frame.size.width, 50)];
-    middlePath.lineWidth = 2;
-    [middlePath stroke];
+    UIBezierPath *bottomPath = [[UIBezierPath alloc]init];
+    [bottomPath moveToPoint:CGPointMake(0, 50)];
+    [bottomPath addLineToPoint:CGPointMake(self.frame.size.width, 50)];
+    bottomPath.lineWidth = 2;
+    [bottomPath stroke];
     
     UIBezierPath *verticalPath = [[UIBezierPath alloc]init];
     [verticalPath moveToPoint:CGPointMake(28, 0)];

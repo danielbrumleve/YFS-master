@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Bomb" representedClassName="Bomb" syncable="YES">
+        <attribute name="bombID" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="bombTotal" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
@@ -30,10 +31,10 @@
         <relationship name="players" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="team" inverseEntity="Player" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Bomb" positionX="160" positionY="192" width="128" height="90"/>
         <element name="Game" positionX="250" positionY="-75" width="128" height="120"/>
         <element name="Inning" positionX="81" positionY="117" width="128" height="120"/>
         <element name="Player" positionX="450" positionY="279" width="128" height="75"/>
         <element name="Team" positionX="421" positionY="87" width="128" height="120"/>
-        <element name="Bomb" positionX="160" positionY="192" width="128" height="75"/>
     </elements>
 </model>
